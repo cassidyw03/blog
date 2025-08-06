@@ -1,0 +1,182 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
+/* Background */
+body {
+    background-color: rgb(177, 160, 174);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Header Styling */
+header {
+    text-align: center;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 0%;
+}
+
+.nav a:link, .nav a:visited {
+    font-family: "DM Serif Text", 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(142, 83, 132);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+/* Hamburger Menu */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1.7rem;
+    right: 0.8rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+    color:white;
+}
+
+#menu.open::before {
+    content: "𝕏";
+    color:white;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("http://127.0.0.1:5500/blog/images/flower.webp");
+    height: 50%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    padding: 150px;
+    margin: 20px 20px;
+}
+
+.hero-text {
+    /* text-align: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -75%);
+    color: white;
+    font-size: 30px;
+    font-family: "Rouge Script";
+} 
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-grid > div {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+}
+
+.grid1 {
+    grid-column: 1/3;
+}
+
+footer a:hover {
+    color:white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style:circle;
+}
+
+input[type="email"] {
+    padding: 0.3rem;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    font-family:  "DM Serif Text", 'Arial Narrow Bold', sans-serif;
+}
+
+form button {
+    padding: 0.3rem;
+    background-color: rgb(255, 173, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blueviolet;
+}
+
+@media (min-width: 67.5em) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .grid1 {
+        grid-column: auto;
+    }
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("http://127.0.0.1:5500/blog/images/flower.webp");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 150px;
+        margin: 70px 200px;
+    }
+    
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(20%, -50%);
+        color: white;
+        font-size: 44px;
+        font-family: "Rouge Script";
+    } 
+}
