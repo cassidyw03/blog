@@ -135,6 +135,20 @@ form button:hover {
     background-color: blueviolet;
 }
 
+/* Photo Page Styling */
+#year-filter {
+    padding: 0.3rem;
+    color: white;
+    background-color: rgb(255, 173, 59);
+    border: none;
+    border-radius: 6px;
+    cursor: grab;
+}
+
+#year-filter:hover {
+    background-color: blueviolet;
+}
+
 @media (min-width: 67.5em) {
     #menu {
         display: none;
